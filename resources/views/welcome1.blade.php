@@ -85,6 +85,7 @@
                     <a href="https://forge.laravel.com">Forge</a>
                     <a href="https://github.com/laravel/laravel">GitHub</a>
                 </div>
+                <img src="{{URL::asset('/public/try/e.jpg')}}"/>
             </div>
         </div>
         @endsection

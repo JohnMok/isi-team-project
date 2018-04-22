@@ -85,10 +85,12 @@
                 <div class="links">
                     
                     <a href="{{ url('products') }}">Product List</a>
+                    <a href="{{ url('orderpage') }}">Order Page</a>
                     <a href="https://laracasts.com">Laracasts</a>
                     <a href="https://laravel-news.com">News</a>
                     <a href="https://forge.laravel.com">Forge</a>
                     <a href="https://github.com/laravel/laravel">GitHub</a>
+                    <p><img src="http://dogsaholic.com/wp-content/uploads/2015/07/Pug-810x539.jpg" height=50%></p>
                 </div>
             </div>
         </div>

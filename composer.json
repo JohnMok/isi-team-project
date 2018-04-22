@@ -24,7 +24,7 @@
             "database/factories"
         ],
         "psr-4": {
-            "laravel\\": "app/"
+            "App\\": "app/"
         }
     },
     "autoload-dev": {

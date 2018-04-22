@@ -1,6 +1,6 @@
 <?php
 
-namespace laravel;
+namespace App;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
@@ -15,7 +15,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'name', 'email', 'password','address',
     ];
 
     /**
@@ -26,4 +26,14 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+    
+    public function cartItems()
+    {
+        return $this->hasManyThrough('App\CartItem', 'App\Cart');
+    }
+    public function trackItems()
+    {
+        return $this->hasManyThrough('App\TrackItem', 'App\Track');
+    }
+
 }
